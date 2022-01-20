@@ -1,18 +1,25 @@
 #!/usr/bin/python
 # -*- coding: iso-8859-15 -*-#
 #
-#   EXERCICE 5
+#   EXERCICE Vecteurs
 #   ================================================
 #
+from os import system
 
-xAB = input(' Entrez abscisse du vecteur AB; xAB = ')
+# This is just to clear the screen. Only works on Windows ( on Unix should be clear instead of cls )
+
+_ = system('cls')
+
+# This is the real program
+
+xAB =  int(input(' Entrez abscisse du vecteur AB; xAB = '))
 print ("xAB = ", xAB)
-yAB = input(' Entrez ordonnée du vecteur AB; yAB = ')
+yAB = int(input(' Entrez ordonnée du vecteur AB; yAB = '))
 print ("yAB = ", yAB)
 
-xCD = input(' Entrez abscisse du vecteur CD; xCD = ')
+xCD =  int(input(' Entrez abscisse du vecteur CD; xCD = '))
 print ("xCD = ", xCD)
-yCD = input(' Entrez ordonnée du vecteur CD; yCD = ')
+yCD = int(input(' Entrez ordonnée du vecteur CD; yCD = ')) 
 print ("yCD = ", yCD)
 
 if xAB * yCD == xCD * yAB:
